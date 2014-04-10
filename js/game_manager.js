@@ -273,7 +273,7 @@ GameManager.prototype.tileMatchesAvailable = function () {
 };
 
 GameManager.prototype.adjacentNumbers = function (first, second) {
-  return Math.abs(this.fib.indexOf(first)-this.fib.indexOf(second)) == 1 || first + second == 2
+  return this.fib.indexOf(first)-this.fib.indexOf(second) == 1 || first + second == 2
 };
 
 GameManager.prototype.positionsEqual = function (first, second) {
